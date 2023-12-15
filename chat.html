@@ -58,8 +58,21 @@
           rows="2"
           placeholder="Digite aqui a sua mensagem"
         ></textarea>
-        <img class="img-send" alt="send-message" src="/img/send.png" />
+        <img
+          id="btn-send"
+          class="img-send"
+          alt="send-message"
+          src="/img/send.png"
+        />
+      </div>
+      <div id="msg-sucess" class="message-info message-sucess">
+        <p>Mensagem enviada com sucesso!</p>
+      </div>
+      <div id="msg-error" class="message-info message-error">
+        <p>Mensagem não enviada. Tente novamente!</p>
       </div>
     </div>
+    <script src="/js/main.js" type="module"></script>
+    <script src="/js/showMessage.js" type="module"></script>
   </body>
 </html>
