@@ -67,12 +67,13 @@ body {
 
 .content-message {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px 20px;
   margin: 10px;
   margin-top: 15px;
-  gap: 20px;
   border-radius: 10px;
+  gap: 8px;
 }
 
 .img-user {
@@ -91,7 +92,6 @@ body {
 }
 
 .me-message {
-  flex-direction: row-reverse;
   background-color: rgb(233, 255, 233);
   text-align: right;
 }
@@ -126,4 +126,27 @@ body {
 
 .message-info-hide {
   display: none;
+}
+
+.container-remove-message {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.img-trash {
+  width: 20px;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.info-message {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.container-message-info {
+  display: flex;
+  flex-direction: row-reverse;
 }
