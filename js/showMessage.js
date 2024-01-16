@@ -1,5 +1,4 @@
 function hideMessageError() {
-  console.log("CHEGOU AQUI");
   const messageDom = document.querySelector("#msg-error");
   messageDom.classList.remove("message-info-show");
   messageDom.classList.add("message-info-hide");
@@ -21,7 +20,6 @@ function showMessageSucess() {
   messageDom.classList.add("message-sucess");
   messageDom.classList.add("message-info-show");
   setTimeout(hideMessageSucess, 5000);
-  console.log("SUCESS");
 }
 
 function showMessageError() {
@@ -33,9 +31,8 @@ function showMessageError() {
   messageDom.classList.add("message-error");
   messageDom.classList.add("message-info-show");
   setTimeout(hideMessageError, 5000);
-  console.log("ERROR");
 }
 
 const btnSendDom = document.querySelector("#btn-send");
-btnSendDom.addEventListener("click", showMessageSucess);
-btnSendDom.addEventListener("mouseover", showMessageError);
+// btnSendDom.addEventListener("click", showMessageSucess);
+// btnSendDom.addEventListener("mouseover", showMessageError);
